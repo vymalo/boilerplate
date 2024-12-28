@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: School backend
+
+springdoc:
+  cache:
+    disabled: true
+  disable-i18n: true
+
+management:
+  endpoint:
+    health:
+      group:
+        custom:
+          include:
+            - diskSpace
+            - ping
+          show-components: always
+          show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"

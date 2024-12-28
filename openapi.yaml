@@ -64,7 +64,7 @@ paths:
       requestBody:
         description: Send sms request
         content:
-          application/cbor:
+          application/json:
             schema:
               $ref: "#/components/schemas/SimpleSchool"
         required: true
@@ -72,19 +72,19 @@ paths:
         200:
           description: "successful operation"
           content:
-            application/cbor:
+            application/json:
               schema:
                 $ref: "#/components/schemas/School"
         400:
           description: "wrong content provided"
           content:
-            application/cbor:
+            application/json:
               schema:
                 $ref: "#/components/schemas/Error"
         500:
           description: "Internal server"
           content:
-            application/cbor:
+            application/json:
               schema:
                 $ref: "#/components/schemas/Error"
     get:
@@ -101,19 +101,19 @@ paths:
         200:
           description: "successful operation"
           content:
-            application/cbor:
+            application/json:
               schema:
                 $ref: "#/components/schemas/PageResponseSchool"
         400:
           description: "wrong content provided"
           content:
-            application/cbor:
+            application/json:
               schema:
                 $ref: "#/components/schemas/Error"
         500:
           description: "Internal server"
           content:
-            application/cbor:
+            application/json:
               schema:
                 $ref: "#/components/schemas/Error"
   /schools/{id}:
@@ -138,19 +138,19 @@ paths:
         200:
           description: "successful operation"
           content:
-            application/cbor:
+            application/json:
               schema:
                 $ref: "#/components/schemas/School"
         400:
           description: "wrong content provided"
           content:
-            application/cbor:
+            application/json:
               schema:
                 $ref: "#/components/schemas/Error"
         500:
           description: "Internal server"
           content:
-            application/cbor:
+            application/json:
               schema:
                 $ref: "#/components/schemas/Error"
 components:
