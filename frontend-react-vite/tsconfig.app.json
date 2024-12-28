@@ -1,28 +1,16 @@
 {
-  "extends": [
-    "@tsconfig/vite-react/tsconfig.json"
-  ],
+  "extends": ["@tsconfig/vite-react/tsconfig.json"],
   "compilerOptions": {
     "paths": {
-      "@/*": [
-        "src/*"
-      ],
-      "@mod/*": [
-        "src/libs/modules/*"
-      ],
-      "@openapi/*": [
-        "src/openapi/*"
-      ],
-      "@comp/*": [
-        "src/libs/components/*"
-      ],
-      "@scr/*": [
-        "src/screens/*"
-      ]
+      "@/*": ["src/*"],
+      "@mod/*": ["src/libs/modules/*"],
+      "@openapi/*": ["src/openapi/*"],
+      "@comp/*": ["src/libs/components/*"],
+      "@scr/*": ["src/screens/*"],
+      "node-fetch": ["node_modules/empty/index.js"],
+      "os": ["node_modules/empty/index.js"]
     },
     "baseUrl": "./"
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }
